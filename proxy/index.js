@@ -8,7 +8,7 @@ app.use('/', express.static(path.resolve(__dirname, '../public')));
 app.use('/listing/:id', express.static(path.resolve(__dirname, '../public')));
 
 
-app.use('/*', proxy({ target: 'http://localhost:3003/', changeOrigin: true }));
+app.use('/*', proxy({ target: 'https://54.153.31.116/', changeOrigin: true }));
 
 app.listen(port, () => {
   console.log(`listening to port ${port}...`);
